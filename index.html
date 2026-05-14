@@ -1,0 +1,199 @@
+{\rtf1\fbidis\ansi\ansicpg1251\deff0\nouicompat\deflang1049{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset1 Segoe UI Emoji;}{\f2\fnil Courier New;}{\f3\fnil\fcharset204 Courier New;}{\f4\fnil\fcharset1 Segoe UI Symbol;}{\f5\fnil\fcharset1 Segoe UI Symbol;}}
+{\*\generator Riched20 10.0.26100}\viewkind4\uc1 
+\pard\f0\fs22\lang1033 <!DOCTYPE html>\par
+<html lang="ru">\par
+<head>\par
+  <meta charset="UTF-8">\par
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">\par
+  <title>\f1\u-10178?\u-8714?\f2  \f3\lang1049\'cc\'ee\'ff \'c2\'ff\'e7\'e0\'eb\'fc\'ed\'e0\'ff \'c1\'e8\'e1\'eb\'e8\'ee\'f2\'e5\'ea\'e0</title>\par
+  <style>\par
+    :root \{ --bg: #f8f4f0; --text: #333; --accent: #c48c5c; \}\par
+    .dark \{ --bg: #1e1e1e; --text: #ddd; --accent: #e6b88a; \}\par
+    body \{\par
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\par
+      margin: 0; background: var(--bg); color: var(--text);\par
+      transition: background 0.3s;\par
+    \}\par
+    header \{\par
+      background: var(--accent); color: white; padding: 1.2rem; text-align: center;\par
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);\par
+    \}\par
+    .container \{ max-width: 1280px; margin: 0 auto; padding: 1.5rem; \}\par
+    .warning \{\par
+      background: #ffe066; color: #333; padding: 1rem; border-radius: 12px;\par
+      margin-bottom: 1.5rem; border: 2px solid #c48c5c;\par
+    \}\par
+    .upload-area \{\par
+      border: 4px dashed var(--accent); padding: 3rem 2rem; text-align: center;\par
+      border-radius: 20px; cursor: pointer; transition: all 0.3s;\par
+    \}\par
+    .upload-area:hover \{ background: rgba(196,140,92,0.1); \}\par
+    .grid \{\par
+      display: grid;\par
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\par
+      gap: 1.5rem;\par
+    \}\par
+    .card \{\par
+      background: white; border-radius: 16px; overflow: hidden;\par
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08); transition: all 0.3s;\par
+    \}\par
+    .dark .card \{ background: #2a2a2a; \}\par
+    .card:hover \{ transform: translateY(-6px); box-shadow: 0 12px 25px rgba(0,0,0,0.15); \}\par
+    .card img \{ width: 100%; height: 220px; object-fit: cover; \}\par
+    .card-content \{ padding: 1rem; \}\par
+    button \{\par
+      background: var(--accent); color: white; border: none;\par
+      padding: 0.9rem 1.8rem; border-radius: 12px; cursor: pointer;\par
+      font-weight: 600; transition: all 0.2s;\par
+    \}\par
+    button:hover \{ transform: scale(1.05); \}\par
+    .modal \{\par
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;\par
+      background: rgba(0,0,0,0.92); display: none; align-items: center; justify-content: center; z-index: 1000;\par
+    \}\par
+    .modal-content \{\par
+      background: white; border-radius: 20px; max-width: 960px; width: 90%;\par
+      max-height: 90vh; overflow: auto;\par
+    \}\par
+    .dark .modal-content \{ background: #222; \}\par
+  </style>\par
+</head>\par
+<body>\par
+  <header>\par
+    <h1>\f1\u-10178?\u-8714?\f2\lang1033  \f3\lang1049\'cc\'ee\'ff \'c2\'ff\'e7\'e0\'eb\'fc\'ed\'e0\'ff \'c1\'e8\'e1\'eb\'e8\'ee\'f2\'e5\'ea\'e0</h1>\par
+    <p style="margin:0; opacity:0.9;">\'d1\'f5\'e5\'ec\'fb \f2\bullet  \f3\'ca\'ed\'e8\'e3\'e8 \f2\bullet  \f3\'d0\'e5\'e4\'e0\'ea\'f2\'ee\'f0</p>\par
+  </header>\par
+\par
+  <div class="container">\par
+    <div id="warning" class="warning" style="display:none;">\par
+\f2       \f1\u9888?\u-497?\f2\lang1033  \f3\lang1049\'d2\'fb \'ee\'f2\'ea\'f0\'fb\'eb \'f4\'e0\'e9\'eb \'ed\'e0\'ef\'f0\'ff\'ec\'f3\'fe. \'d1\'ee\'f5\'f0\'e0\'ed\'e5\'ed\'e8\'e5 \'f0\'e0\'e1\'ee\'f2\'e0\'e5\'f2 \'f2\'ee\'eb\'fc\'ea\'ee \'e2 \'fd\'f2\'ee\'e9 \'e2\'ea\'eb\'e0\'e4\'ea\'e5.<br>\par
+      <strong>\'d0\'e5\'ea\'ee\'ec\'e5\'ed\'e4\'e0\'f6\'e8\'ff:</strong> \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e9 GitHub Pages \'e8\'eb\'e8 \'e7\'e0\'ef\'f3\'f1\'f2\'e8 \'eb\'ee\'ea\'e0\'eb\'fc\'ed\'fb\'e9 \'f1\'e5\'f0\'e2\'e5\'f0.\par
+    </div>\par
+\par
+    <div class="upload-area" id="uploadArea">\par
+      <h2>\f4\u-10179?\u-8988?\f2\lang1033  \f3\lang1049\'cf\'e5\'f0\'e5\'f2\'e0\'f9\'e8\'f2\'e5 \'f1\'fe\'e4\'e0 PDF, \'f4\'ee\'f2\'ee \'e8\'eb\'e8 \'f1\'f5\'e5\'ec\'fb</h2>\par
+      <p>\'e8\'eb\'e8 \'ed\'e0\'e6\'ec\'e8\'f2\'e5 \'e4\'eb\'ff \'e2\'fb\'e1\'ee\'f0\'e0 \'f4\'e0\'e9\'eb\'ee\'e2</p>\par
+      <input type="file" id="fileInput" multiple accept="image/*,.pdf" style="display:none">\par
+      <button onclick="document.getElementById('fileInput').click()">\'c2\'fb\'e1\'f0\'e0\'f2\'fc \'f4\'e0\'e9\'eb\'fb</button>\par
+    </div>\par
+\par
+    <div style="margin:1.5rem 0; text-align:right;">\par
+      <button onclick="exportLibrary()">\f4\u-10179?\u-9026?\f2\lang1033  \f3\lang1049\'dd\'ea\'f1\'ef\'ee\'f0\'f2 \'e1\'e8\'e1\'eb\'e8\'ee\'f2\'e5\'ea\'e8</button>\par
+      <button onclick="document.getElementById('importInput').click()">\f4\u-10179?\u-8987?\f2\lang1033  \f3\lang1049\'c8\'ec\'ef\'ee\'f0\'f2 \'e1\'e8\'e1\'eb\'e8\'ee\'f2\'e5\'ea\'e8</button>\par
+      <input type="file" id="importInput" accept=".json" style="display:none" onchange="importLibrary(event)">\par
+    </div>\par
+\par
+    <h2>\f4\u-10179?\u-8998?\f2\lang1033  \f3\lang1049\'cc\'ee\'e8 \'f1\'f5\'e5\'ec\'fb \'e8 \'ea\'ed\'e8\'e3\'e8</h2>\par
+    <div class="grid" id="library"></div>\par
+  </div>\par
+\par
+  <!-- \'cc\'ee\'e4\'e0\'eb\'fc\'ed\'ee\'e5 \'ee\'ea\'ed\'ee -->\par
+  <div id="modal" class="modal">\par
+    <div class="modal-content">\par
+      <div style="padding:1rem; background:var(--accent); color:white; display:flex; justify-content:space-between; align-items:center;">\par
+        <h3 id="modalTitle" style="margin:0;"></h3>\par
+        <button onclick="closeModal()" style="background:none; border:none; font-size:2rem; color:white;">\f5\u10005?\f0\lang1033 </button>\par
+      </div>\par
+      <div id="modalContent" style="padding:1.5rem;"></div>\par
+    </div>\par
+  </div>\par
+\par
+  <script>\par
+    let library = [];\par
+    const storageAvailable = (() => \{ try \{ localStorage.setItem('test','test'); localStorage.removeItem('test'); return true; \} catch(e) \{ return false; \} \})();\par
+\par
+    function loadLibrary() \{\par
+      if (storageAvailable) \{\par
+        const saved = localStorage.getItem('knittingLibrary');\par
+        if (saved) library = JSON.parse(saved);\par
+      \}\par
+      renderLibrary();\par
+    \}\par
+\par
+    function saveLibrary() \{\par
+      if (storageAvailable) localStorage.setItem('knittingLibrary', JSON.stringify(library));\par
+    \}\par
+\par
+    function renderLibrary() \{\par
+      const container = document.getElementById('library');\par
+      container.innerHTML = library.map((item, i) => `\par
+        <div class="card" onclick="openItem($\{i\})">\par
+          <img src="$\{item.preview || 'https://via.placeholder.com/280x220/ddd/666?text=\f3\lang1049\'d1\'f5\'e5\'ec\'e0'\}">\par
+          <div class="card-content">\par
+            <strong>$\{item.name\}</strong><br>\par
+            <small>$\{new Date(item.date).toLocaleDateString('ru-RU')\}</small>\par
+          </div>\par
+        </div>\par
+      `).join('');\par
+    \}\par
+\par
+    function openItem(index) \{\par
+      const item = library[index];\par
+      document.getElementById('modalTitle').textContent = item.name;\par
+      const content = document.getElementById('modalContent');\par
+\par
+      if (item.type.includes('pdf')) \{\par
+        content.innerHTML = `<iframe src="$\{item.data\}" width="100%" height="700px" style="border:none;"></iframe>`;\par
+      \} else \{\par
+        content.innerHTML = `\par
+          <img src="$\{item.data\}" style="max-width:100%; border-radius:12px; display:block; margin:0 auto 1rem;">\par
+          <p><strong>\'cf\'f0\'ee\'f1\'f2\'ee\'e9 \'f0\'e5\'e4\'e0\'ea\'f2\'ee\'f0</strong> (\'e2 \'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e5\'e9 \'e2\'e5\'f0\'f1\'e8\'e8 \'e1\'f3\'e4\'e5\'f2 \'ef\'ee\'eb\'ed\'ee\'f6\'e5\'ed\'ed\'e0\'ff \'f1\'e5\'f2\'ea\'e0)</p>\par
+        `;\par
+      \}\par
+      document.getElementById('modal').style.display = 'flex';\par
+    \}\par
+\par
+    function closeModal() \{\par
+      document.getElementById('modal').style.display = 'none';\par
+    \}\par
+\par
+    // \'c7\'e0\'e3\'f0\'f3\'e7\'ea\'e0\par
+    document.getElementById('uploadArea').addEventListener('click', () => document.getElementById('fileInput').click());\par
+    document.getElementById('fileInput').addEventListener('change', e => \{\par
+      Array.from(e.target.files).forEach(file => \{\par
+        const reader = new FileReader();\par
+        reader.onload = ev => \{\par
+          const item = \{\par
+            name: file.name,\par
+            date: Date.now(),\par
+            type: file.type,\par
+            data: ev.target.result,\par
+            preview: file.type.startsWith('image') ? ev.target.result : null\par
+          \};\par
+          library.unshift(item);\par
+          saveLibrary();\par
+          renderLibrary();\par
+        \};\par
+        reader.readAsDataURL(file);\par
+      \});\par
+    \});\par
+\par
+    function exportLibrary() \{\par
+      const data = JSON.stringify(library, null, 2);\par
+      const blob = new Blob([data], \{type: 'application/json'\});\par
+      const url = URL.createObjectURL(blob);\par
+      const a = document.createElement('a');\par
+      a.href = url; a.download = '\'e2\'ff\'e7\'e0\'eb\'fc\'ed\'e0\'ff_\'e1\'e8\'e1\'eb\'e8\'ee\'f2\'e5\'ea\'e0.json'; a.click();\par
+    \}\par
+\par
+    function importLibrary(e) \{\par
+      const file = e.target.files[0];\par
+      if (!file) return;\par
+      const reader = new FileReader();\par
+      reader.onload = ev => \{\par
+        library = JSON.parse(ev.target.result);\par
+        saveLibrary();\par
+        renderLibrary();\par
+        alert('\f5\u9989?\f2\lang1033  \f3\lang1049\'c1\'e8\'e1\'eb\'e8\'ee\'f2\'e5\'ea\'e0 \'f3\'f1\'ef\'e5\'f8\'ed\'ee \'e8\'ec\'ef\'ee\'f0\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e0!');\par
+      \};\par
+      reader.readAsText(file);\par
+    \}\par
+\par
+    // \'c7\'e0\'ef\'f3\'f1\'ea\par
+    loadLibrary();\par
+    if (!storageAvailable) document.getElementById('warning').style.display = 'block';\par
+  </script>\par
+</body>\par
+</html>\f0\lang1033\par
+}
+ 
